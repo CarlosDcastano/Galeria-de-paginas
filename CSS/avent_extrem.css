@@ -1,0 +1,74 @@
+    header {
+    position: relative; /* para que su contenido absoluto se ancle aquí */
+}
+
+#volver {
+    flex-direction: column;
+    position: absolute;
+    top: 20px;    /* ajusta según tu diseño */
+    left: 20px;   /* ajusta según tu diseño */
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+}
+
+#volver:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+
+.nav-avent a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-avent a:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s;
+}
+
+
+
+
+.boton-volver {
+    width: 4rem;
+    height: auto;
+}
+
+#volver span {
+    font-size: 1rem;
+    color:white;
+}
+
+#info-comercial {
+    display: flex;
+
+}
+
+#info-comercial article {
+    padding: 2rem;
+}
+
+#nav-avent-secundario {
+    margin-bottom: 5px;
+    border: solid 2px black;
+}
+
+#nav-avent-secundario ol {
+    display: flex;
+    gap: 5rem;
+    
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.links:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s;
+}
