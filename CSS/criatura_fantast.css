@@ -1,0 +1,73 @@
+
+
+header {
+    position: relative; /* para que su contenido absoluto se ancle aquí */
+}
+
+#volver {
+    flex-direction: column;
+    position: absolute;
+    top: 20px;    /* ajusta según tu diseño */
+    left: 20px;   /* ajusta según tu diseño */
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+}
+
+#volver:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.boton-volver {
+    width: 4rem;
+    height: auto;
+}
+
+#volver span {
+    font-size: 1rem;
+    color:white;
+}
+
+header {
+    height: 10rem;
+}
+
+header img {
+    height: 10rem;
+}
+
+
+main {
+    background-color: rgb(105, 105, 212)
+}
+
+#tabla-criaturas {
+    display: flex;
+    justify-content: center;
+}
+
+
+#tabla-criaturas th, td{
+    background-color: rgb(243, 218, 185);
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+
+
+}
+
+#tabla-criaturas td  {
+    background-color: antiquewhite;
+    
+    
+    
+}
+
+#tabla-criaturas td a {
+    color: black;
+    text-decoration: none;
+    text-overflow: none;
+    font-weight: bold;
+    
+}

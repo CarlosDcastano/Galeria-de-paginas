@@ -8,7 +8,7 @@ body {
 header {
     padding: 2rem;
     background-color: black;
-    height: 10rem;
+    height: 20rem;
     color: white;
     display: flex;
     gap: 2rem;
@@ -42,6 +42,7 @@ body {
 
 main {
     flex: 1; /* ocupa todo el espacio disponible */
+    align-content: center;
 }
 
 
