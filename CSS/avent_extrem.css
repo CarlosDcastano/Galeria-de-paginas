@@ -44,6 +44,7 @@
 
 #info-comercial {
     display: flex;
+    text-align: center;
 
 }
 
@@ -52,14 +53,23 @@
 }
 
 #nav-avent-secundario {
+    background-color:grey;
     margin-bottom: 5px;
-    border: solid 2px black;
+    padding: 0%;
+    border-radius: 0%;
+
 }
 
-#nav-avent-secundario ol {
+#nav-avent-secundario ol{
     display: flex;
-    gap: 5rem;
+    gap: 10rem;
+    padding: 0%;
     
+}
+
+li a{
+    color: white;
+    padding: 0%;
 }
 
 .links {
@@ -71,4 +81,70 @@
 .links:hover {
     transform: scale(1.5);
     transition: transform 0.3s;
+}
+
+#catalogo {
+    background-color: rgb(243, 127, 10);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; /* espacio entre artículos */
+    padding: 20px;
+}
+
+#catalogo article {
+
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+}
+
+#catalogo article:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+}
+
+#catalogo img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 100%;
+    border: solid 2px black;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#catalogo div {
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+#art-paracaidismo {
+    grid-column: span 2; /* ocupa las 2 columnas */
+}
+
+#art-rafting {
+    grid-row: span 2;
+    gap:15rem;
+}
+
+#art-rafting img {
+    height: 25%;
+    width: 45%;
+
+}
+
+
+
+#art-escala-roca {
+    grid-column: span 2; /* que el último también ocupe todo si quieres */
+}
+
+#divisor h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 0%;
 }
