@@ -1,0 +1,85 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    word-break: break-word;
+
+}
+
+
+
+header {
+    display: flex;
+    gap: 0.5rem;
+    color: red;
+}
+
+#volver {
+    flex-direction: column;
+    position: absolute;
+    top: 20px;    /* ajusta según tu diseño */
+    left: 20px;   /* ajusta según tu diseño */
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+}
+
+#volver:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.boton-volver {
+    width: 4rem;
+    height: auto;
+}
+
+#volver span {
+    font-size: 1rem;
+    color:white;
+}
+
+
+#titulo-principal {
+    margin: 0;
+}
+
+
+main {
+    display: block;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+#lista-semanario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 1rem 0rem;
+}
+
+#semanario h2{
+    text-align: center;
+}
+
+#tabla th, td{
+    border: 2px solid white ;
+    background-color: rgb(243, 218, 185);
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+#materiales {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+}
+
+
+@media (max-width: 479px){
+    header {
+        flex-direction: column;
+        font-size: smaller;
+    }
+}

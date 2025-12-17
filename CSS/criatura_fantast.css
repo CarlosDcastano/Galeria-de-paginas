@@ -34,12 +34,13 @@ header {
 }
 
 header img {
-    height: 10rem;
+    height: auto;
 }
 
 
 main {
-    background-color: rgb(105, 105, 212)
+    background-color: rgb(105, 105, 212);
+    display: block;
 }
 
 #seccion-intro {
