@@ -10,7 +10,7 @@ body {
 header {
     display: flex;
     gap: 0.5rem;
-    color: red;
+    color: white;
 }
 
 #volver {
@@ -47,39 +47,161 @@ header {
 main {
     display: block;
     margin: 0.5rem;
-    padding: 1rem;
+    background-color: rgb(9, 38, 75);;
 }
 
-#lista-semanario {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
+#cont-lista-semanario {
+    margin: 0;
+    background-color: rgb(9, 38, 75);
     color: aliceblue;
     padding: 1rem 0rem;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#lista-section{
+    background-color: rgb(46, 92, 136);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    border-radius: 15px;
+
+}
+
+
+
+#lista-entrenamiento{
+    background-color: rgb(9, 38, 75);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 15px;
+
+}
+
+#semanario {
+    display: flex;
+    flex-direction: column;
+
 }
 
 #semanario h2{
     text-align: center;
 }
 
+#tabla {
+    max-width: 500px;
+    width: 100%;
+    min-width: none;
+    align-self: center;
+}
+
 #tabla th, td{
     border: 2px solid white ;
-    background-color: rgb(243, 218, 185);
+    background-color:  rgb(46, 92, 136);
     padding: 8px;
     text-align: center;
-    color: black;
+    color:white;
+}
+
+#materiales-section {
+    /* display: grid;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr)); */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color:rgb(9, 38, 75);
+    color:white;
+    text-align: center;
 }
 
 #materiales {
+    background-color: rgb(9, 38, 75);
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2,1fr);
 }
+
+.material {
+    background-color: rgb(46, 92, 136);
+    padding-left: 1rem;
+    color:black;
+    text-align: left;
+}
+
+.material:hover {
+    transform: scale(1.2);
+    box-shadow: white 0px 0px 10px;
+    transition: all 0.5s
+}
+
+.material1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.material2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.material3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.material4 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.material5 {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(9, 38, 75);;
+}
+
+#iframes{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+iframe{
+    min-width: 220px;
+    max-width: 560px;
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+}
+
+
+
 
 
 @media (max-width: 479px){
     header {
         flex-direction: column;
         font-size: smaller;
+    }
+
+    #materiales{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 220px;
+        width: 100%;
+
     }
 }
